@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF546A341B1A1ABA00FDD65C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF546A311B1A1ABA00FDD65C /* BaseViewController.swift */; };
 		FF55EA181B19B1DF0003CD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA171B19B1DF0003CD65 /* AppDelegate.swift */; };
 		FF55EA1A1B19B1DF0003CD65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA191B19B1DF0003CD65 /* LoginViewController.swift */; };
 		FF55EA1D1B19B1DF0003CD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF55EA1B1B19B1DF0003CD65 /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		FF55EA471B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA461B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift */; };
 		FF55EA481B19C35E0003CD65 /* LoginBusinessLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */; };
 		FF55EA501B19C5CF0003CD65 /* StubbedControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA4F1B19C5CF0003CD65 /* StubbedControllable.swift */; };
-		FF55EA521B19D1C70003CD65 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA511B19D1C70003CD65 /* BaseViewController.swift */; };
 		FF55EA561B19E4AF0003CD65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA551B19E4AF0003CD65 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF546A311B1A1ABA00FDD65C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FF546A321B1A1ABA00FDD65C /* Controllable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controllable.h; sourceTree = "<group>"; };
+		FF546A331B1A1ABA00FDD65C /* Eventable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eventable.h; sourceTree = "<group>"; };
 		FF55EA121B19B1DF0003CD65 /* UnitTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF55EA161B19B1DF0003CD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF55EA171B19B1DF0003CD65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,12 +45,9 @@
 		FF55EA2C1B19B1DF0003CD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBusinessLogicController.swift; sourceTree = "<group>"; };
 		FF55EA431B19BE580003CD65 /* UnitTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTesting-Bridging-Header.h"; sourceTree = "<group>"; };
-		FF55EA441B19BE590003CD65 /* Controllable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controllable.h; sourceTree = "<group>"; };
-		FF55EA451B19BEE60003CD65 /* Eventable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eventable.h; sourceTree = "<group>"; };
 		FF55EA461B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBusinessLogicControllerTests.swift; sourceTree = "<group>"; };
 		FF55EA4A1B19C4B80003CD65 /* UnitTestingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTestingTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FF55EA4F1B19C5CF0003CD65 /* StubbedControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubbedControllable.swift; sourceTree = "<group>"; };
-		FF55EA511B19D1C70003CD65 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FF55EA551B19E4AF0003CD65 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +69,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF546A301B1A1ABA00FDD65C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FF546A311B1A1ABA00FDD65C /* BaseViewController.swift */,
+				FF546A321B1A1ABA00FDD65C /* Controllable.h */,
+				FF546A331B1A1ABA00FDD65C /* Eventable.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		FF55EA091B19B1DF0003CD65 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		FF55EA141B19B1DF0003CD65 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				FF546A301B1A1ABA00FDD65C /* Base */,
 				FF55EA171B19B1DF0003CD65 /* AppDelegate.swift */,
 				FF55EA191B19B1DF0003CD65 /* LoginViewController.swift */,
 				FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */,
@@ -99,9 +110,6 @@
 				FF55EA201B19B1DF0003CD65 /* LaunchScreen.xib */,
 				FF55EA151B19B1DF0003CD65 /* Supporting Files */,
 				FF55EA431B19BE580003CD65 /* UnitTesting-Bridging-Header.h */,
-				FF55EA511B19D1C70003CD65 /* BaseViewController.swift */,
-				FF55EA441B19BE590003CD65 /* Controllable.h */,
-				FF55EA451B19BEE60003CD65 /* Eventable.h */,
 			);
 			path = UnitTesting;
 			sourceTree = "<group>";
@@ -241,9 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF546A341B1A1ABA00FDD65C /* BaseViewController.swift in Sources */,
 				FF55EA561B19E4AF0003CD65 /* HomeViewController.swift in Sources */,
 				FF55EA3C1B19B6540003CD65 /* LoginBusinessLogicController.swift in Sources */,
-				FF55EA521B19D1C70003CD65 /* BaseViewController.swift in Sources */,
 				FF55EA1A1B19B1DF0003CD65 /* LoginViewController.swift in Sources */,
 				FF55EA181B19B1DF0003CD65 /* AppDelegate.swift in Sources */,
 			);
