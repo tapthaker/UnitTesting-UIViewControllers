@@ -18,6 +18,7 @@
 		FF55EA481B19C35E0003CD65 /* LoginBusinessLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */; };
 		FF55EA501B19C5CF0003CD65 /* StubbedControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA4F1B19C5CF0003CD65 /* StubbedControllable.swift */; };
 		FF55EA561B19E4AF0003CD65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA551B19E4AF0003CD65 /* HomeViewController.swift */; };
+		FF96A84C1B1A1C0800800831 /* DummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FF96A84B1B1A1C0800800831 /* DummyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		FF55EA4A1B19C4B80003CD65 /* UnitTestingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTestingTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FF55EA4F1B19C5CF0003CD65 /* StubbedControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubbedControllable.swift; sourceTree = "<group>"; };
 		FF55EA551B19E4AF0003CD65 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF96A84A1B1A1C0800800831 /* DummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyClass.h; sourceTree = "<group>"; };
+		FF96A84B1B1A1C0800800831 /* DummyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				FF55EA4A1B19C4B80003CD65 /* UnitTestingTests-Bridging-Header.h */,
 				FF55EA461B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift */,
 				FF55EA2B1B19B1DF0003CD65 /* Supporting Files */,
+				FF96A84A1B1A1C0800800831 /* DummyClass.h */,
+				FF96A84B1B1A1C0800800831 /* DummyClass.m */,
 			);
 			path = UnitTestingTests;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF55EA471B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift in Sources */,
+				FF96A84C1B1A1C0800800831 /* DummyClass.m in Sources */,
 				FF55EA481B19C35E0003CD65 /* LoginBusinessLogicController.swift in Sources */,
 				FF55EA501B19C5CF0003CD65 /* StubbedControllable.swift in Sources */,
 			);
