@@ -1,35 +1,31 @@
-//
-//  BaseViewController.swift
-//  UnitTesting
-//
-//  Created by Tapan Thaker on 30/05/15.
-//  Copyright (c) 2015 Tapan Thaker. All rights reserved.
-//
-
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController,Controllable {
+    
+    var eventable: Eventable?{
+        didSet{
+            self.eventable?.controllable = self
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func render(key: String!, value: NSObject!) {
+            NSLog("Render for \(key) not implemented")
     }
-    */
-
+    
+    func getValue(key: String!) -> NSObject! {
+        return NSNull()
+    }
+    
+    func dispatch(eventName: String, eventValue: AnyObject?){
+        self.eventable?.dispatchEvent(eventName, object: eventValue as! NSObject)
+    }
+    
+    func showAlert(alertMessage: String!) {
+        UIAlertView(title: "Alert", message: alertMessage, delegate: nil, cancelButtonTitle: "Okay").show()
+    }
+    
 }

@@ -1,36 +1,42 @@
-//
-//  LoginBusinessLogicController.swift
-//  UnitTesting
-//
-//  Created by Tapan Thaker on 30/05/15.
-//  Copyright (c) 2015 Tapan Thaker. All rights reserved.
-//
-
 import UIKit
 import XCTest
 
-class LoginBusinessLogicController: XCTestCase {
+class LoginBusinessLogicControllerTests: XCTestCase {
 
+    
+    var stubbedControllable: StubbedControllable!
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let businessController = LoginBusinessLogicController()
+        stubbedControllable = StubbedControllable()
+        stubbedControllable.eventable = businessController
+        businessController.controllable = stubbedControllable
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func enterUsernameAndPassword(username: String,password: String){
+        stubbedControllable.stubbedGetValue.updateValue(username, forKey: "username")
+        stubbedControllable.stubbedGetValue.updateValue(password, forKey: "password")
+        stubbedControllable.dispatchEvent("loginButtonPressed", eventValue: nil)
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    
+    func testLoginFailure(){
+        enterUsernameAndPassword("batman", password: "joker")
+        
+        let lastMessage = stubbedControllable.lastRender["message"] as! String
+        XCTAssertEqual(lastMessage, "Wrong username or password", "Should render error message on incorrect password")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+    
+    func testLoginSuccess(){
+        enterUsernameAndPassword("batman", password: "bruce")
+        XCTAssertEqual(stubbedControllable.lastPage!, "Home", "Should goTo Home when correct password is enterred")
+    }
+    
+    func testMaximumNumberOfRetries(){
+        for i in 0...5{
+            enterUsernameAndPassword("batman", password: "joker")
         }
+        
+        XCTAssertEqual(stubbedControllable.lastAlert!, "You have exceeded the maximum number of attempts, please try after sometime.", "Should alert if exceeded maximum number of attempts")
     }
 
 }

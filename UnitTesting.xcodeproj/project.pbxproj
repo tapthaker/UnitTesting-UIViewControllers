@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		FF55EA181B19B1DF0003CD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA171B19B1DF0003CD65 /* AppDelegate.swift */; };
-		FF55EA1A1B19B1DF0003CD65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA191B19B1DF0003CD65 /* ViewController.swift */; };
+		FF55EA1A1B19B1DF0003CD65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA191B19B1DF0003CD65 /* LoginViewController.swift */; };
 		FF55EA1D1B19B1DF0003CD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF55EA1B1B19B1DF0003CD65 /* Main.storyboard */; };
 		FF55EA1F1B19B1DF0003CD65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF55EA1E1B19B1DF0003CD65 /* Images.xcassets */; };
 		FF55EA221B19B1DF0003CD65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF55EA201B19B1DF0003CD65 /* LaunchScreen.xib */; };
-		FF55EA2E1B19B1DF0003CD65 /* UnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA2D1B19B1DF0003CD65 /* UnitTestingTests.swift */; };
+		FF55EA3C1B19B6540003CD65 /* LoginBusinessLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */; };
+		FF55EA471B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA461B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift */; };
+		FF55EA481B19C35E0003CD65 /* LoginBusinessLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */; };
+		FF55EA501B19C5CF0003CD65 /* StubbedControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA4F1B19C5CF0003CD65 /* StubbedControllable.swift */; };
+		FF55EA521B19D1C70003CD65 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA511B19D1C70003CD65 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,20 @@
 		FF55EA121B19B1DF0003CD65 /* UnitTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF55EA161B19B1DF0003CD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF55EA171B19B1DF0003CD65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF55EA191B19B1DF0003CD65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF55EA191B19B1DF0003CD65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FF55EA1C1B19B1DF0003CD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF55EA1E1B19B1DF0003CD65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FF55EA211B19B1DF0003CD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FF55EA271B19B1DF0003CD65 /* UnitTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF55EA2C1B19B1DF0003CD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF55EA2D1B19B1DF0003CD65 /* UnitTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingTests.swift; sourceTree = "<group>"; };
+		FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBusinessLogicController.swift; sourceTree = "<group>"; };
+		FF55EA431B19BE580003CD65 /* UnitTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTesting-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF55EA441B19BE590003CD65 /* Controllable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controllable.h; sourceTree = "<group>"; };
+		FF55EA451B19BEE60003CD65 /* Eventable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eventable.h; sourceTree = "<group>"; };
+		FF55EA461B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBusinessLogicControllerTests.swift; sourceTree = "<group>"; };
+		FF55EA4A1B19C4B80003CD65 /* UnitTestingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTestingTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF55EA4F1B19C5CF0003CD65 /* StubbedControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubbedControllable.swift; sourceTree = "<group>"; };
+		FF55EA511B19D1C70003CD65 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +89,16 @@
 			isa = PBXGroup;
 			children = (
 				FF55EA171B19B1DF0003CD65 /* AppDelegate.swift */,
-				FF55EA191B19B1DF0003CD65 /* ViewController.swift */,
+				FF55EA191B19B1DF0003CD65 /* LoginViewController.swift */,
+				FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */,
 				FF55EA1B1B19B1DF0003CD65 /* Main.storyboard */,
 				FF55EA1E1B19B1DF0003CD65 /* Images.xcassets */,
 				FF55EA201B19B1DF0003CD65 /* LaunchScreen.xib */,
 				FF55EA151B19B1DF0003CD65 /* Supporting Files */,
+				FF55EA431B19BE580003CD65 /* UnitTesting-Bridging-Header.h */,
+				FF55EA511B19D1C70003CD65 /* BaseViewController.swift */,
+				FF55EA441B19BE590003CD65 /* Controllable.h */,
+				FF55EA451B19BEE60003CD65 /* Eventable.h */,
 			);
 			path = UnitTesting;
 			sourceTree = "<group>";
@@ -98,7 +114,9 @@
 		FF55EA2A1B19B1DF0003CD65 /* UnitTestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				FF55EA2D1B19B1DF0003CD65 /* UnitTestingTests.swift */,
+				FF55EA4E1B19C5CF0003CD65 /* Stubs */,
+				FF55EA4A1B19C4B80003CD65 /* UnitTestingTests-Bridging-Header.h */,
+				FF55EA461B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift */,
 				FF55EA2B1B19B1DF0003CD65 /* Supporting Files */,
 			);
 			path = UnitTestingTests;
@@ -110,6 +128,14 @@
 				FF55EA2C1B19B1DF0003CD65 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF55EA4E1B19C5CF0003CD65 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				FF55EA4F1B19C5CF0003CD65 /* StubbedControllable.swift */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF55EA1A1B19B1DF0003CD65 /* ViewController.swift in Sources */,
+				FF55EA3C1B19B6540003CD65 /* LoginBusinessLogicController.swift in Sources */,
+				FF55EA521B19D1C70003CD65 /* BaseViewController.swift in Sources */,
+				FF55EA1A1B19B1DF0003CD65 /* LoginViewController.swift in Sources */,
 				FF55EA181B19B1DF0003CD65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF55EA2E1B19B1DF0003CD65 /* UnitTestingTests.swift in Sources */,
+				FF55EA471B19C32B0003CD65 /* LoginBusinessLogicControllerTests.swift in Sources */,
+				FF55EA481B19C35E0003CD65 /* LoginBusinessLogicController.swift in Sources */,
+				FF55EA501B19C5CF0003CD65 /* StubbedControllable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +370,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = UnitTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTesting/UnitTesting-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +383,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = UnitTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTesting/UnitTesting-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -371,6 +406,7 @@
 				INFOPLIST_FILE = UnitTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTestingTests/UnitTestingTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTesting.app/UnitTesting";
 			};
 			name = Debug;
@@ -386,6 +422,7 @@
 				INFOPLIST_FILE = UnitTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnitTestingTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTesting.app/UnitTesting";
 			};
 			name = Release;
@@ -409,6 +446,7 @@
 				FF55EA331B19B1DF0003CD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF55EA341B19B1DF0003CD65 /* Build configuration list for PBXNativeTarget "UnitTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +455,7 @@
 				FF55EA361B19B1DF0003CD65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

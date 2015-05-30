@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@protocol Controllable;
 
 @protocol Eventable <NSObject>
+
+@property (nonatomic,strong) id<Controllable> controllable;
+-(void)dispatchEvent:(NSString*)eventName object:(NSObject*)object;
 
 @end
