@@ -29,6 +29,16 @@ class LoginViewController: BaseViewController{
             return super.getValue(key)
         }
     }
+    
+    override func goToPage(pageName: String!) {
+        switch(pageName){
+            case "Home":
+                self.performSegueWithIdentifier("HomeIdentifier", sender: self)
+            default:
+                super.goToPage(pageName)
+        }
+    }
+    
     @IBAction func onLoginButtonPressed(sender: AnyObject) {
         self.eventable?.dispatchEvent("loginButtonPressed", object: nil)
     }

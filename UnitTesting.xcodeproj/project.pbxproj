@@ -17,6 +17,7 @@
 		FF55EA481B19C35E0003CD65 /* LoginBusinessLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */; };
 		FF55EA501B19C5CF0003CD65 /* StubbedControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA4F1B19C5CF0003CD65 /* StubbedControllable.swift */; };
 		FF55EA521B19D1C70003CD65 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA511B19D1C70003CD65 /* BaseViewController.swift */; };
+		FF55EA561B19E4AF0003CD65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55EA551B19E4AF0003CD65 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FF55EA4A1B19C4B80003CD65 /* UnitTestingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTestingTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		FF55EA4F1B19C5CF0003CD65 /* StubbedControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubbedControllable.swift; sourceTree = "<group>"; };
 		FF55EA511B19D1C70003CD65 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FF55EA551B19E4AF0003CD65 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				FF55EA171B19B1DF0003CD65 /* AppDelegate.swift */,
 				FF55EA191B19B1DF0003CD65 /* LoginViewController.swift */,
 				FF55EA3B1B19B6540003CD65 /* LoginBusinessLogicController.swift */,
+				FF55EA551B19E4AF0003CD65 /* HomeViewController.swift */,
 				FF55EA1B1B19B1DF0003CD65 /* Main.storyboard */,
 				FF55EA1E1B19B1DF0003CD65 /* Images.xcassets */,
 				FF55EA201B19B1DF0003CD65 /* LaunchScreen.xib */,
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF55EA561B19E4AF0003CD65 /* HomeViewController.swift in Sources */,
 				FF55EA3C1B19B6540003CD65 /* LoginBusinessLogicController.swift in Sources */,
 				FF55EA521B19D1C70003CD65 /* BaseViewController.swift in Sources */,
 				FF55EA1A1B19B1DF0003CD65 /* LoginViewController.swift in Sources */,

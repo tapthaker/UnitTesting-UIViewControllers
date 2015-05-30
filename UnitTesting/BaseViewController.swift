@@ -28,4 +28,8 @@ class BaseViewController: UIViewController,Controllable {
         UIAlertView(title: "Alert", message: alertMessage, delegate: nil, cancelButtonTitle: "Okay").show()
     }
     
+    func goToPage(pageName: String!) {
+        NSLog("goToPage for \(pageName) not implemented")
+    }
+    
 }
