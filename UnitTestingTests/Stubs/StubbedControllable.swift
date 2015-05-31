@@ -10,7 +10,11 @@ import UIKit
 
 class StubbedControllable: NSObject,Controllable {
     
-    var eventable: Eventable?
+    var eventable: Eventable?{
+        didSet{
+            self.eventable?.controllable = self
+        }
+    }
     var renders: [[String : AnyObject]]
     var goToPages: [String]
     var alerts: [String]
